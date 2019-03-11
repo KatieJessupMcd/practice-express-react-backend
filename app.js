@@ -1,3 +1,5 @@
+// ROUTES
+// starts server, route handlers that use class methods defined in MODEL
 const app = express();
 app.use(cors());
 app.use(express.json());

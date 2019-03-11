@@ -1,3 +1,5 @@
+// MODEL
+// exports Model
 const axios = require("axios");
 const db = require("./db");
 const BASE_URL = "https://icanhazdadjoke.com/";

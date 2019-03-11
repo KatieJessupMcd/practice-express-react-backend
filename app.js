@@ -4,14 +4,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// app.get("/jokes", async function(req, res, next) {
-//   try {
-//     const jokes = await Joke.getRandomJokes();
-//     return res.json({ jokes });
-//   } catch (e) {
-//     return next(e);
-//   }
-// });
+app.get("/jokes", async function(req, res, next) {
+  try {
+    const jokes = await Joke.getRandomJokes();
+    return res.json({ jokes });
+  } catch (e) {
+    return next(e);
+  }
+});
 
 // app.get("/jokes/best", async function(req, res, next) {
 //   try {

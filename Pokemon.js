@@ -12,17 +12,17 @@ class Pokemon {
   }
   
 
-  static async insert({ id, joke }) {
-    try {
+  // static async insert({ id, joke }) {
+  //   try {
 
-      const newJoke = await db.query(`
-        INSERT INTO jokes (id, joke) VALUES ($1, $2) RETURNING *;
-      `, [id, joke]);
-      return newJoke.rows[0];
-    } catch (e) {
-      throw new Error("oops", e)
-    }
-  }
+  //     const newJoke = await db.query(`
+  //       INSERT INTO jokes (id, joke) VALUES ($1, $2) RETURNING *;
+  //     `, [id, joke]);
+  //     return newJoke.rows[0];
+  //   } catch (e) {
+  //     throw new Error("oops", e)
+  //   }
+  // }
 
   
 }

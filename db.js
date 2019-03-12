@@ -1,7 +1,7 @@
 const { Client } = require("pg");
 
 const client = new Client({
-  connectionString: "postgresql:///DB_NAME"
+  connectionString: "postgresql:///pokemon_db"
 });
 
 client.connect();
